@@ -1,0 +1,57 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #FAF33E;
+    --secondary-color: #0C0F0A;
+    --accent1-color: #9FB1BC;
+    --accent2-color: #623CEA;
+
+    --heading-font: 'Times New Roman', serif;
+    --paragraph-font: 'Geneva', serif;
+
+    --nav-background-color: #FFFFF6;
+    --nav-link-color: #0C0F0A;
+    --nav-hover-link-color: #FFFFF6;
+    --nav-hover-background-color: #9FB1BC;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
