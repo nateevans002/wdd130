@@ -1,0 +1,120 @@
+:root {
+    --color-light-blue: #A5F0FA;
+    --color-gray: #C6C9C8;
+    --color-yellow: #FADC46;
+    --color-yellow-transparent: rgba(250, 220, 70, 0.3);
+    --color-black: #090909;
+    --color-white: #FAFAFA;
+} /*Colors for various items throughout the website.  Transparent allows for a slightly transparent background. */
+
+.container {
+    max-width: 1200px; /*Makes the image take up the whole page*/
+    margin: 0 auto; /*Gives it no margin on the sides.*/
+    padding: 0 20px; /*Also, no padding on the sides.*/
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-gray);
+}/*Font items for the body elements, default.*/
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--color-black);
+    text-align: center;
+}/*Font items for the h1 elements, default.*/
+
+h2, h3, h4, h5, h6 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--color-black);
+    text-align: center;
+} /*Font items for the other header elements, default.*/
+
+nav img {
+    display: block;
+} /*Updates to the logo*/
+
+nav {
+    background-color: var(--color-light-blue);
+    padding: 10px;
+    position: relative;
+}/*Updates to the items in the navigation container.*/
+
+p {
+    color: var(--color-black);
+    text-align: center;
+} /*Default paragraph color and alignment.  Should probably be more specific to which paragraph.*/
+
+footer img {
+    width: 20px;
+    height: auto;
+    border: 1px var(--color-black);
+    padding: 2px;
+    box-shadow: 0 0 30px var(--color-gray);
+}
+
+.sociallinks {
+    text-decoration: none;
+    color: inherit;
+    display: flex; /*Makes these social media links side by side.*/
+}
+
+.hero {
+    position: relative;
+    width: 100%; /* Ensure the hero section takes up full width */
+    height: auto; /* Let the height adjust based on the image */
+}
+
+/* Style the hero image */
+.hero img {
+    display: block;
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Absolutely position the h1 heading */
+.hero h1 {
+    position: absolute;
+    top: 30%; /* Adjust this to move the heading up or down, higher number goes lower and lower number goes higher. */
+    left: 50%;
+    transform: translateX(-50%); /* Center the heading horizontally */
+    color: var(--color-white);
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 8px var(--color-gray); /* Add shadow for better readability */
+    background-color: var(--color-yellow-transparent);
+}
+
+/* Absolutely position the article */
+.hero article {
+    position: absolute;
+    bottom: 30%; /* Adjust this to move the article up or down */
+    left: 10%;
+    right: 10%; /* Optional, to make the article take up more space */
+    background-color: var(--color-yellow-transparent);
+    padding: 20px;
+    color: var(--color-black);
+    font-size: 1.2em;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Float the image inside the article */
+.hero article img {
+    float: right;
+    margin-left: 20px;
+    width: 200px; /* Set the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: flex; /*Trying to center it vertically.*/
+    align-items: center;
+}
+
+.hero article p {
+    margin: 0;
+    line-height: 1.5;
+}

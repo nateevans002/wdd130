@@ -1,5 +1,12 @@
+:root {
+    --margin: 1px;
+    --heading-background-color: steelblue;
+    --header-color: steelblue;
+}
+
+
 nav {
-    background-color: steelblue;
+    background-color: var(--heading-background-color);
     padding: 10px;
 }
 
@@ -10,7 +17,7 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: var(--header-color);
 }
 
 main img {
@@ -31,9 +38,9 @@ main {
 
 aside {
     width: 25rem;
-    margin: 1px;
-    border: 1px;
-    padding: 1px;
+    margin: var(--margin);
+    border: var(--margin);
+    padding: var(--margin);
     background-color:beige;
     color: black;
     text-align: center;
