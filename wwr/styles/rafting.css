@@ -36,6 +36,13 @@ h2, h3, h4, h5, h6 {
     text-align: center;
 } /*Font items for the other header elements, default.*/
 
+img {
+    max-width: 100%; /* Ensure images do not exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images behave like block elements */
+    margin: 0 auto; /* Center images */
+}
+
 nav img {
     display: block;
 } /*Updates to the logo*/
@@ -44,12 +51,23 @@ nav {
     background-color: var(--color-light-blue);
     padding: 10px;
     position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-row: 3/1;
+    align-items: center;
 }/*Updates to the items in the navigation container.*/
 
 p {
     color: var(--color-black);
     text-align: center;
 } /*Default paragraph color and alignment.  Should probably be more specific to which paragraph.*/
+
+footer .sociallinks {
+    display: flex;
+    justify-content: right; /* This centers the items horizontally */
+    align-items: center; /* This vertically aligns the images within the nav */
+    gap: 10px; /* Adds space between the social media icons */
+}
 
 footer img {
     width: 20px;
@@ -117,4 +135,48 @@ footer img {
 .hero article p {
     margin: 0;
     line-height: 1.5;
+}
+
+section.history-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+section.history-section h2 {
+    grid-column: span 3;
+    text-align: center;
+}
+
+section.history-section .history img {
+    width: 200px; /* Set a fixed width */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure it behaves like a block element */
+}
+
+.history-section.history {
+    text-align: center;
+}
+
+section.adventure-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+section.adventure-section h2 {
+    grid-column: span 5;
+    text-align: center;
+}
+
+.adenture-section img {
+    width: 200px; /* Set a fixed width */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure it behaves like a block element */
+}
+
+.adventure-section div {
+    text-align: center;
 }
