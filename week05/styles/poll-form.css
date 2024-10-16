@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+}
+
+body {
+    font-family: Edu+AU+VIC+WA+NT+Guides, sans-serif;
+    font-size: 1em;
+    color: rgb(8, 8, 8);
+    background: rgb(231, 234, 231)
+}
+
+header {
+    margin: 10px;
+    width: 600px;
+}
+
+h1 {
+    margin: 1em;
+    text-align: center;
+    font-family: cursive;
+    font-size: 3em;
+    color: rgb(232, 220, 156);
+    background: rgb(231, 234, 231)
+}
+
+form {
+    width: 600px;
+    margin: 1em;
+    padding: 1em;
+    border: 1em black;
+    border-radius: 0.5rem;
+    background-color: rgb(232, 220, 156);
+    display: grid
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1em;
+    padding: 1em;
+}
+
+legend{
+    padding: 1em;
+    color: black;
+    font-size: 1em;
+}
+
+label, input, button, select, textarea {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+label {
+    text-align: right;
+    padding-right: 1em;
+}
+
+input, select, textarea {
+    font-size: .75em;
+}
+
+input[type="checkbox"] {
+    width: 1em;
+    height: 1em;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1em;
+    padding: 1em;
+    background-color:  black;
+    color: rgb(231, 234, 231);
+    border: black;
+    border-radius: 1em;
+    font-size: 1em;
+}
+
+button.hover {
+    background-color: white;
+}
+
+footer {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    background-color: rgb(232, 220, 156);
+    border-top: 1em;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5em 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+
+
+
