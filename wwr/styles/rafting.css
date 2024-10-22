@@ -274,3 +274,38 @@ form {
     max-width: 600px; /* Optional: restricts the form width to a reasonable size */
     padding: 20px; /* Adds some padding around the form */
 }
+
+section.trip-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+section.trip-section h2 {
+    grid-column: span 3;
+    text-align: center;
+}
+
+.trip-section img {
+    width: 200px; /* Set a fixed width */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure it behaves like a block element */
+}
+
+.trip-section div {
+    text-align: center;
+}
+
+.trip-table {
+    display: grid;
+    grid-column: 1fr;
+    justify-content: center;
+
+}
+.contact-button {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; /* Centers the button vertically if there's extra space */
+    margin: 20px 0; /* Adds some vertical margin for spacing */
+}
